@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Cibersegurança</title>
+    <link rel="stylesheet" href="style_novo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AprendaProgramação</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index_novo.html">Início</a></li>
+                <li><a href="index_novo.html#areas">Áreas</a></li>
+                <li><a href="#redes">Segurança de Redes</a></li>
+                <li><a href="#criptografia">Criptografia</a></li>
+                <li><a href="#malware">Análise de Malware</a></li>
+            </ul>
+        </nav>
+        <div class="hero-lang">
+            <h1>Fundamentos de Cibersegurança</h1>
+            <p>Aprenda a proteger sistemas e dados em um mundo digital.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro-cyber">
+            <h2>O que é Cibersegurança?</h2>
+            <p>Cibersegurança é a prática de proteger sistemas, redes e programas de ataques digitais. Esses ataques geralmente visam acessar, alterar ou destruir informações confidenciais; extorquir dinheiro de usuários; ou interromper processos de negócios. Em um mundo cada vez mais conectado, a cibersegurança é crucial para proteger nossa vida digital, desde dados pessoais até infraestruturas críticas.</p>
+        </section>
+
+        <section id="redes">
+            <h2><i class="fas fa-server"></i> Segurança de Redes</h2>
+            <p><strong>Sobre Segurança de Redes:</strong> Este é um dos pilares da cibersegurança e envolve a proteção da integridade, confidencialidade e acessibilidade das redes de computadores. Inclui o uso de hardware e software para proteger a rede contra acesso não autorizado, uso indevido ou modificação. Tecnologias e conceitos-chave incluem <strong>Firewalls</strong>, <strong>Sistemas de Detecção/Prevenção de Intrusão (IDS/IPS)</strong> e <strong>Redes Privadas Virtuais (VPNs)</strong>.</p>
+            
+            <h3>Ideias de Projetos em Segurança de Redes:</h3>
+            <ul>
+                <li>Configurar um firewall básico em um sistema Linux usando `iptables`.</li>
+                <li>Montar um laboratório virtual com máquinas para simular uma rede e testar políticas de segurança.</li>
+                <li>Utilizar o Wireshark para capturar e analisar o tráfego de rede em busca de anomalias.</li>
+                <li>Configurar um IDS (como o Snort) para monitorar o tráfego da sua rede.</li>
+            </ul>
+
+            <h3>Recursos para Aprender Segurança de Redes:</h3>
+            <h4>Vídeos Gratuitos (Exemplos)</h4>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLigQ9zMmlIqL7Mz1sP7C2v4ihK5Yu7C7L&si=HjFcpcASyowk7Ut6" target="_blank"><i class="fab fa-youtube"></i> Curso de Segurança de Redes - YouTube</a></li>
+               
+            </ul>
+            
+        </section>
+
+        <section id="criptografia">
+            <h2><i class="fas fa-key"></i> Criptografia</h2>
+            <p><strong>Sobre Criptografia:</strong> É a ciência de codificar e decodificar informações para que apenas as partes autorizadas possam acessá-las. A criptografia protege dados em trânsito (quando são enviados pela internet) e em repouso (quando estão armazenados). Os conceitos fundamentais incluem <strong>criptografia simétrica</strong> (mesma chave para cifrar e decifrar), <strong>criptografia assimétrica</strong> (chaves pública e privada) e <strong>funções de hash</strong> (que criam uma "impressão digital" única dos dados).</p>
+            
+            <h3>Ideias de Projetos em Criptografia:</h3>
+            <ul>
+                <li>Desenvolver um programa simples em Python para criptografar e descriptografar arquivos.</li>
+                <li>Criar uma aplicação de chat que utilize criptografia de ponta a ponta.</li>
+                <li>Implementar um verificador de integridade de arquivos usando hashes (como SHA-256).</li>
+                <li>Estudar e explicar o funcionamento do protocolo HTTPS e do TLS.</li>
+            </ul>
+
+            <h3>Recursos para Aprender Criptografia:</h3>
+            <h4>Vídeos Gratuitos (Exemplos)</h4>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLucm8g_ezqNred_fII4GzZxMi91PKbney&si=aeCpWBEgo4YOVBp9" target="_blank"><i class="fab fa-youtube"></i> Segurança e Criptografia - YouTube</a></li>
+                
+            </ul>
+            
+        </section>
+
+        <section id="malware">
+            <h2><i class="fas fa-virus"></i> Análise de Malware</h2>
+            <p><strong>Sobre Análise de Malware:</strong> É o processo de dissecar um software malicioso (malware) para entender seu propósito, origem, funcionalidades e impacto. Existem duas abordagens principais: a <strong>análise estática</strong>, que examina o código do malware sem executá-lo, e a <strong>análise dinâmica</strong>, que executa o malware em um ambiente seguro e controlado (sandbox) para observar seu comportamento. Essa área é crucial para desenvolver defesas e responder a ataques.</p>
+            
+            <h3>Ideias de Projetos em Análise de Malware:</h3>
+            <ul>
+                <li>Montar um laboratório seguro (sandbox) usando máquinas virtuais para análise.</li>
+                <li>Realizar uma análise estática básica em um arquivo suspeito para extrair strings e outras informações.</li>
+                <li>Utilizar ferramentas como o VirusTotal para investigar amostras de malware.</li>
+                <li>Aprender a usar um debugger (como o x64dbg) para analisar o comportamento de um programa.</li>
+            </ul>
+
+            <h3>Recursos para Aprender Análise de Malware:</h3>
+            <h4>Vídeos Gratuitos (Exemplos)</h4>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLIfZMtpPYFP7281QqcwivCTuKeelXxg7G&si=-OcHeCsYSFfSx-cR" target="_blank"><i class="fab fa-youtube"></i> Análise de Malware - YouTube</a></li>
+
+            </ul>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Plataforma de Aprendizado. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script_novo.js"></script>
+</body>
+</html>

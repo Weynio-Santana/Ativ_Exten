@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprendaProgramação</title>
+    <link rel="stylesheet" href="style_novo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AprendaProgramação</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index_novo.html">Início</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#linguagens">Linguagens</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Bem-vindo à Aprenda Programação!</h1>
+            <p>Seu ponto de partida para o universo da programação.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro-programacao">
+            <h2>Por Que Aprender a Programar?</h2>
+            <p>Programar é, em sua essência, a arte de dar instruções a um computador para que ele execute tarefas. É a linguagem que constrói o mundo digital que usamos todos os dias: os sites que visitamos, os aplicativos em nossos celulares, os jogos que amamos e os sistemas que gerenciam desde bancos até missões espaciais.</p>
+            <p>Aprender a programar hoje vai muito além de uma habilidade técnica; é uma forma de desenvolver o raciocínio lógico, a criatividade e a capacidade de resolver problemas complexos de maneira estruturada. Veja alguns dos principais benefícios:</p>
+            <ul>
+                <li><strong>Oportunidades de Carreira:</strong> A demanda por profissionais de tecnologia é alta e continua crescendo. Programar abre portas para carreiras bem remuneradas e com grande potencial de crescimento em praticamente todos os setores da economia.</li>
+                <li><strong>Resolução de Problemas:</strong> A programação treina sua mente para decompor problemas grandes em partes menores e gerenciáveis, uma habilidade valiosa em qualquer área da vida.</li>
+                <li><strong>Criatividade e Inovação:</strong> Se você tem uma ideia para um aplicativo, um site ou uma ferramenta, saber programar lhe dá o poder de transformá-la em realidade. É uma ferramenta poderosa para a inovação.</li>
+                <li><strong>Automação de Tarefas:</strong> Você pode usar a programação para automatizar tarefas repetitivas no seu dia a dia, seja no trabalho ou na vida pessoal, economizando tempo e aumentando sua produtividade.</li>
+            </ul>
+            <p class="caminho-sugerido">Nesta plataforma, nosso objetivo é ser seu guia nessa jornada. Independentemente da área que mais lhe interessa, o primeiro passo é o mais importante. Explore, pratique e descubra o poder de criar com código. <strong>O futuro é programável, e você pode fazer parte dele.</strong></p>
+        </section>
+        <section id="areas">
+            <h2>Explore as Áreas da Programação</h2>
+            <div class="area-card">
+                 <h3><a href="backend_languages.html"><i class="fas fa-laptop-code"></i> Desenvolvimento Web</a></h3>
+                <p>O Desenvolvimento Web é uma das áreas mais acessíveis e procuradas. Envolve a criação de sites, sistemas e aplicações que funcionam na internet.</p>
+                <ul>
+                    <li><strong>Front-end:</strong> Criação da interface e experiência do usuário. Tecnologias principais: <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, <code>React</code>, <code>Vue.js</code>.</li>
+                    <li><strong>Back-end:</strong> Lógica do sistema, autenticação, banco de dados e APIs. Tecnologias comuns: <code>Node.js</code>, <code>Express</code>, <code>Python</code> (Django/Flask), <code>Java</code> (Spring).</li>
+                    <li><strong>Full Stack:</strong> Combina habilidades de front-end e back-end para desenvolver um sistema completo.</li>
+                    <li><strong>Banco de dados:</strong> <code>MySQL</code>, <code>PostgreSQL</code>, <code>MongoDB</code>.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Comece com HTML → CSS → JavaScript → depois aprenda um framework como React → explore o back-end com Node.js ou Python.</p>
+            </div>
+
+            <div class="area-card">
+                <h3><a href="area_dados.html"><i class="fas fa-database"></i> Área de Dados</a></h3>
+                <p>A Área de Dados foca em coletar, processar e analisar informações para extrair insights valiosos e tomar decisões estratégicas.</p>
+                <ul>
+                    <li><strong>Análise de Dados:</strong> Foco em exploração e visualização. Tecnologias: <code>Python</code> (Pandas), <code>SQL</code>, <code>Excel</code>, <code>Tableau</code>, <code>Power BI</code>.</li>
+                    <li><strong>Engenharia de Dados:</strong> Construção de pipelines de dados (ETL). Tecnologias: <code>Python</code>, <code>SQL</code>, <code>Apache Spark</code>, <code>Airflow</code>.</li>
+                    <li><strong>Ciência de Dados:</strong> Criação de modelos preditivos e machine learning. Tecnologias: <code>Python</code> (Scikit-learn, TensorFlow), <code>R</code>.</li>
+                    <li><strong>Ferramentas populares:</strong> Jupyter Notebook, VS Code, Git, DBeaver.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Comece com SQL para consultas → aprenda Python com Pandas para manipulação de dados → estude estatística → avance para machine learning.</p>
+            </div>
+
+            <div class="area-card">
+                <h3><a href="dev_mobile.html"><i class="fas fa-mobile-alt"></i> Desenvolvimento Mobile</a></h3>
+                <p>Esta área é dedicada à criação de aplicativos para smartphones e tablets, focando em performance e experiência do usuário.</p>
+                <ul>
+                    <li><strong>Desenvolvimento Nativo:</strong> Apps para um sistema operacional específico. Tecnologias: <code>Swift</code> e <code>SwiftUI</code> (iOS), <code>Kotlin</code> e <code>Jetpack Compose</code> (Android).</li>
+                    <li><strong>Desenvolvimento Multiplataforma:</strong> Um código para ambos os sistemas. Tecnologias: <code>Flutter</code> (com Dart), <code>React Native</code> (com JavaScript).</li>
+                    <li><strong>Back-end as a Service (BaaS):</strong> Serviços de back-end prontos. Tecnologias: <code>Firebase</code>, <code>AWS Amplify</code>.</li>
+                    <li><strong>Ferramentas populares:</strong> Xcode (iOS), Android Studio, VS Code, Git.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Escolha uma abordagem (Nativo ou Multiplataforma) → aprenda a linguagem base (Kotlin, Swift, ou JS/Dart) → construa projetos simples.</p>
+            </div>
+
+            <div class="area-card">
+                <h3><a href="qa.html"><i class="fas fa-check-circle"></i> QA (Quality Assurance)</a></h3>
+                <p>QA é a área responsável por garantir a qualidade do software, identificando bugs e assegurando que tudo funcione como esperado.</p>
+                <ul>
+                    <li><strong>Teste Manual:</strong> Execução de casos de teste sem scripts. Foco em planos de teste e reporte de bugs.</li>
+                    <li><strong>Teste Automatizado:</strong> Uso de scripts para validar funcionalidades. Ferramentas: <code>Selenium</code>, <code>Cypress</code>, <code>Playwright</code>.</li>
+                    <li><strong>Teste de API:</strong> Verificação da lógica do back-end. Ferramentas: <code>Postman</code>, <code>Insomnia</code>.</li>
+                    <li><strong>Teste de Performance:</strong> Análise de velocidade e carga. Ferramentas: <code>JMeter</code>, <code>k6</code>.</li>
+                    <li><strong>Linguagens comuns:</strong> <code>Python</code>, <code>JavaScript</code>, <code>Java</code>.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Entenda os fundamentos de teste manual → comece a testar APIs com Postman → avance para automação web com Cypress ou Selenium.</p>
+            </div>
+
+        </section>
+
+        <section id="outras-areas-promissoras">
+            <h2>Outras Áreas Promissoras</h2>
+            
+            <div class="area-card">
+                <h3><a href="comp_nuvem.html"><i class="fas fa-cloud"></i> Computação em Nuvem</a></h3>
+                <p>A Computação em Nuvem envolve o uso de infraestrutura e serviços pela internet, permitindo escalar aplicações de forma flexível e eficiente.</p>
+                <ul>
+                    <li><strong>Principais Provedores:</strong> <code>AWS</code>, <code>Microsoft Azure</code>, <code>Google Cloud (GCP)</code>.</li>
+                    <li><strong>Infraestrutura como Código (IaC):</strong> Gerenciamento de infra com código. Ferramentas: <code>Terraform</code>, <code>Ansible</code>.</li>
+                    <li><strong>Contêineres e Orquestração:</strong> Empacotamento e gerenciamento de apps. Ferramentas: <code>Docker</code>, <code>Kubernetes</code>.</li>
+                    <li><strong>Computação Serverless:</strong> Execução de código sem gerenciar servidores. Serviços: <code>AWS Lambda</code>, <code>Azure Functions</code>.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Escolha um provedor (AWS é popular) → estude para a certificação de fundamentos → aprenda Docker → explore IaC com Terraform.</p>
+            </div>
+
+            <div class="area-card">
+                <h3><a href="cyber.html"><i class="fas fa-shield-alt"></i> Cibersegurança</a></h3>
+                <p>Esta área foca na proteção de sistemas, redes e dados contra ameaças e ataques digitais, uma necessidade crescente no mundo conectado.</p>
+                <ul>
+                    <li><strong>Segurança Ofensiva (Red Team):</strong> Simulação de ataques para encontrar falhas. Áreas: <code>Pentesting</code>, <code>Ethical Hacking</code>.</li>
+                    <li><strong>Segurança Defensiva (Blue Team):</strong> Defesa, detecção e resposta a incidentes. Áreas: Análise de <code>SOC</code>, Forense Digital.</li>
+                    <li><strong>Segurança em Nuvem:</strong> Proteção de infraestruturas em <code>AWS</code>, <code>Azure</code>, <code>GCP</code>.</li>
+                    <li><strong>Ferramentas essenciais:</strong> <code>Kali Linux</code>, <code>Wireshark</code>, <code>Nmap</code>, <code>Metasploit</code>.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Entenda redes e Linux → estude para uma certificação básica como Security+ → pratique em plataformas como Hack The Box.</p>
+            </div>
+
+            <div class="area-card">
+                <h3><a href="devops.html"><i class="fas fa-cogs"></i> DevOps</a></h3>
+                <p>DevOps é uma cultura que une desenvolvimento (Dev) e operações (Ops) para automatizar e otimizar o ciclo de vida do software.</p>
+                <ul>
+                    <li><strong>CI/CD (Integração/Entrega Contínua):</strong> Automação do build, teste e deploy. Ferramentas: <code>Jenkins</code>, <code>GitHub Actions</code>, <code>GitLab CI</code>.</li>
+                    <li><strong>Contêineres e Orquestração:</strong> <code>Docker</code>, <code>Kubernetes</code>.</li>
+                    <li><strong>Infraestrutura como Código (IaC):</strong> <code>Terraform</code>, <code>Ansible</code>.</li>
+                    <li><strong>Monitoramento e Observabilidade:</strong> <code>Prometheus</code>, <code>Grafana</code>, <code>Datadog</code>.</li>
+                    <li><strong>Controle de Versão:</strong> <code>Git</code> e plataformas como <code>GitHub</code>.</li>
+                </ul>
+                <p class="caminho-sugerido">👉 <em>Caminho sugerido:</em> Domine Git → aprenda Linux e scripting (Bash) → "containerize" aplicações com Docker → automatize pipelines com GitHub Actions.</p>
+            </div>
+
+        </section>
+
+        <section id="linguagens">
+            <h2>Principais Linguagens e Tecnologias</h2>
+            
+            <div class="language-category">
+                <h3>Back-end</h3>
+                <ul>
+                    <li><a href="backend_languages.html#python"><i class="fab fa-python"></i> Python</a></li>
+                    <li><a href="backend_languages.html#java"><i class="fab fa-java"></i> Java</a></li>
+                    <li><a href="backend_languages.html#cpp"><i class="fab fa-cuttlefish"></i> C++</a></li>
+                    <li><a href="backend_languages.html#php"><i class="fab fa-php"></i> PHP</a></li>
+                    <li><a href="backend_languages.html#ruby"><i class="fas fa-gem"></i> Ruby</a></li>
+                    <li><a href="backend_languages.html#nodejs"><i class="fab fa-node-js"></i> Node.js</a></li>
+                </ul>
+            </div>
+
+            <div class="language-category">
+                <h3>Front-end</h3>
+                 <ul>
+                    <li><a href="frontend_technologies.html#html"><i class="fab fa-html5"></i> HTML5</a></li>
+                    <li><a href="frontend_technologies.html#css"><i class="fab fa-css3-alt"></i> CSS3</a></li>
+                    <li><a href="frontend_technologies.html#javascript"><i class="fab fa-js"></i> JavaScript</a></li>
+                    <li><a href="frontend_technologies.html#react"><i class="fab fa-react"></i> React</a></li>
+                </ul>
+            </div>
+
+            <div class="language-category">
+                <h3>Área de Dados</h3>
+                <ul>
+                    <li><a href="area_dados.html"><i class="fab fa-python"></i> Python (Dados)</a></li>
+                    <li><a href="area_dados.html"><i class="fab fa-r-project"></i> R</a></li>
+                    <li><a href="area_dados.html"><i class="fas fa-database"></i> SQL</a></li>
+                </ul>
+            </div>
+
+            <div class="language-category">
+                <h3>Desenvolvimento Mobile</h3>
+                <ul>
+                    <li><a href="dev_mobile.html"><i class="fab fa-swift"></i> Swift</a></li>
+                    <li><a href="dev_mobile.html"><i class="fab fa-android"></i> Kotlin</a></li>
+                    <li><a href="dev_mobile.html"><i class="fab fa-react"></i> React Native</a></li>
+                    <li><a href="dev_mobile.html"><i class="fas fa-mobile-alt"></i> Flutter</a></li>
+                </ul>
+            </div>
+            
+            <div class="language-category">
+                <h3>QA (Quality Assurance)</h3>
+                <ul>
+                    <li><a href="qa.html"><i class="fas fa-vial"></i> Selenium</a></li>
+                    <li><a href="qa.html"><i class="fab fa-js-square"></i> Cypress</a></li>
+                  
+                </ul>
+            </div>
+
+            <div class="language-category">
+                <h3>Computação em Nuvem</h3>
+                <ul>
+                    <li><a href="comp_nuvem.html"><i class="fab fa-aws"></i> AWS</a></li>
+                    <li><a href="comp_nuvem.html"><i class="fab fa-microsoft"></i> Azure</a></li>
+                    <li><a href="comp_nuvem.html"><i class="fab fa-google"></i> GCP</a></li>
+                    <li><a href="comp_nuvem.html"><i class="fas fa-server"></i> Terraform</a></li>
+                </ul>
+            </div>
+
+            <div class="language-category">
+                <h3>Cibersegurança</h3>
+                <ul>
+                    <li><a href="cyber.html"><i class="fas fa-server"></i> Segurança de Redes</a></li>
+                    <li><a href="cyber.html"><i class="fas fa-key"></i> Criptografia</a></li>
+                    <li><a href="cyber.html"><i class="fas fa-virus"></i> Análise de Malware</a></li>
+                </ul>
+            </div>
+
+            <div class="language-category">
+                <h3>DevOps</h3>
+                <ul>
+                    <li><a href="devops.html"><i class="fab fa-docker"></i> Docker</a></li>
+                    <li><a href="devops.html"><i class="fas fa-dharmachakra"></i> Kubernetes</a></li>
+                    <li><a href="devops.html"><i class="fab fa-git-alt"></i> Git</a></li>
+                   
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Dúvidas ou sugestões? Adoraríamos ouvir você!</p>
+            <p>weyniosantanadev@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Plataforma de Aprendizado. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script_novo.js"></script>
+</body>
+</html>

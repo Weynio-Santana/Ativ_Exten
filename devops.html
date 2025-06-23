@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura e Ferramentas DevOps</title>
+    <link rel="stylesheet" href="style_novo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AprendaProgramação</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index_novo.html">Início</a></li>
+                <li><a href="index_novo.html#areas">Áreas</a></li>
+                <li><a href="#docker">Docker</a></li>
+                <li><a href="#kubernetes">Kubernetes</a></li>
+                <li><a href="#git">Git</a></li>
+                
+            </ul>
+        </nav>
+        <div class="hero-lang">
+            <h1>Cultura e Ferramentas DevOps</h1>
+            <p>Automatize e integre os processos de desenvolvimento e operações.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro-devops">
+            <h2>O que é DevOps?</h2>
+            <p>DevOps é a combinação de filosofias culturais, práticas e ferramentas que aumenta a capacidade de uma organização de entregar aplicações e serviços em alta velocidade. O objetivo é unir as equipes de Desenvolvimento (Dev) e Operações (Ops) para automatizar e integrar seus processos. Isso resulta em um ciclo de desenvolvimento mais rápido, maior qualidade de software e a capacidade de responder melhor às necessidades do negócio. Um conceito central em DevOps é o pipeline de <strong>CI/CD (Integração Contínua/Entrega Contínua)</strong>.</p>
+        </section>
+
+        <section id="docker">
+            <h2><i class="fab fa-docker"></i> Docker</h2>
+            <p><strong>Sobre Docker:</strong> Docker é uma plataforma de código aberto que automatiza a implantação de aplicações dentro de <strong>contêineres</strong>. Um contêiner empacota o código de uma aplicação e todas as suas dependências, garantindo que ela funcione de forma rápida e confiável em qualquer ambiente de computação. Diferente das máquinas virtuais, os contêineres são leves e compartilham o kernel do sistema operacional, tornando-os muito mais eficientes.</p>
+            
+            <h3>Ideias de Projetos com Docker:</h3>
+            <ul>
+                <li>Criar um Dockerfile para "containerizar" uma aplicação web simples (ex: Python/Flask ou Node.js/Express).</li>
+                <li>Orquestrar múltiplos contêineres (ex: uma aplicação e um banco de dados) usando Docker Compose.</li>
+                <li>Publicar uma imagem Docker customizada no Docker Hub.</li>
+                <li>Configurar um ambiente de desenvolvimento local consistente usando contêineres.</li>
+            </ul>
+
+            <h3>Recursos para Aprender Docker:</h3>
+            <h4>Vídeos Gratuitos (Exemplos)</h4>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N&si=x8tNDNVFGK19m9TP" target="_blank"><i class="fab fa-youtube"></i> Docker Essencial - YouTube</a></li>
+                
+            </ul>
+            
+        </section>
+
+        <section id="kubernetes">
+            <h2><i class="fas fa-dharmachakra"></i> Kubernetes (K8s)</h2>
+            <p><strong>Sobre Kubernetes:</strong> Também conhecido como K8s, o Kubernetes é uma plataforma de código aberto para orquestração de contêineres. Quando você tem muitas aplicações em contêineres, o Kubernetes ajuda a gerenciá-las em escala: ele automatiza a implantação, o escalonamento e a operação desses contêineres. Originalmente desenvolvido pelo Google, o Kubernetes é o padrão de mercado para gerenciar aplicações complexas e distribuídas.</p>
+            
+            <h3>Ideias de Projetos com Kubernetes:</h3>
+            <ul>
+                <li>Configurar um cluster Kubernetes local usando Minikube ou Kind.</li>
+                <li>Fazer o deploy de uma aplicação em contêiner no seu cluster local.</li>
+                <li>Expor uma aplicação para acesso externo usando um Service do Kubernetes.</li>
+                <li>Estudar e implementar diferentes estratégias de deploy (ex: Rolling Update).</li>
+            </ul>
+
+            <h3>Recursos para Aprender Kubernetes:</h3>
+            <h4>Vídeos Gratuitos (Exemplos)</h4>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PL9wKVHxY5DoNy-D4errvry9sVktl9YNcA&si=grBp2vW391XFDIuF" target="_blank"><i class="fab fa-youtube"></i> Curso completo Kubernetes  - YouTube</a></li>
+                
+            </ul>
+            
+        </section>
+
+        <section id="git">
+            <h2><i class="fab fa-git-alt"></i> Git</h2>
+            <p><strong>Sobre Git:</strong> Git é um sistema de controle de versão distribuído, gratuito e de código aberto. É uma ferramenta fundamental para qualquer desenvolvedor, permitindo rastrear as alterações no código-fonte ao longo do tempo. Com o Git, várias pessoas podem trabalhar no mesmo projeto simultaneamente sem sobrescrever o trabalho umas das outras. Conceitos essenciais incluem <strong>repositórios</strong>, <strong>commits</strong>, <strong>branches</strong> e <strong>merges</strong>. Plataformas como GitHub, GitLab e Bitbucket são baseadas no Git.</p>
+            
+            <h3>Ideias de Projetos com Git:</h3>
+            <ul>
+                <li>Iniciar um repositório para um projeto pessoal e fazer seus primeiros commits.</li>
+                <li>Criar e trabalhar com branches para desenvolver uma nova funcionalidade.</li>
+                <li>Colaborar em um projeto de código aberto no GitHub, fazendo um fork e um pull request.</li>
+                <li>Aprender a resolver conflitos de merge.</li>
+            </ul>
+
+            <h3>Recursos para Aprender Git:</h3>
+            <h4>Vídeos Gratuitos (Exemplos)</h4>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLcoYAcR89n-qbO7YAVj5S0alABLis_QVU&si=9qcmUbUK6VsPMj0I" target="_blank"><i class="fab fa-youtube"></i> Curso Git e GitHub - YouTube</a></li>
+                
+            </ul>
+           
+        </section>
+        
+       
+    </main>
+
+    <footer>
+        <p>© 2025 Plataforma de Aprendizado. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script_novo.js"></script>
+</body>
+</html>

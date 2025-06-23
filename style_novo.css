@@ -1,0 +1,320 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navegação */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+/* Botão Hambúrguer */
+.nav-toggle {
+    display: none; /* Escondido em telas maiores */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+/* Estado Ativo do Hambúrguer (para JS) */
+.nav-active .hamburger {
+    transform: rotate(45deg);
+}
+.nav-active .hamburger::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+.nav-active .hamburger::after {
+    bottom: 0;
+    transform: rotate(90deg);
+}
+
+
+/* Header Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x600.png?text=Placeholder+Image') no-repeat center center/cover; /* Substitua pela sua imagem */
+    color: white;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero-lang { /* Estilo similar para páginas de linguagem */
+    background-color: #4CAF50;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+.hero-lang h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #4CAF50;
+    display: inline-block; /* Para centralizar a borda */
+}
+/* Para centralizar o H2 + borda */
+section h2 {
+    display: block; /* Faz o h2 ocupar a largura e permitir text-align */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 1.5rem;
+}
+section h2::after { /* Cria a borda abaixo do h2 */
+    content: '';
+    display: block;
+    width: 80px; /* Largura da borda */
+    height: 3px;
+    background: #4CAF50;
+    margin: 0.5rem auto 0; /* Centraliza a borda */
+}
+
+
+/* Cards de Área */
+.area-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.area-card h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#linguagens ul, #resources ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#linguagens li a, #resources li a {
+    display: block;
+    background-color: #e7e7e7;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#linguagens li a i, #resources li a i {
+    margin-right: 8px;
+}
+
+#linguagens li a:hover, #resources li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#projects ul li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 3px solid #4CAF50;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Esconde os links */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Altura da navbar */
+        left: 0;
+        background-color: #333;
+        padding-bottom: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostra os links quando ativo */
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block; /* Mostra o botão hambúrguer */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.caminho-sugerido {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #4CAF50;
+}
+
+.area-card code {
+    background-color: #e7e7e7;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Adicionar ao seu style_novo.css */
+#intro-programacao ul {
+    list-style: none; /* Remove os marcadores padrão */
+    padding-left: 0;
+    margin-top: 1em;
+}
+
+#intro-programacao ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-left: 3px solid #4CAF50;
+    border-radius: 4px;
+}
